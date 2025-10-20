@@ -16,12 +16,10 @@ https://docs.python.org/3/library/time.html
 # -----------------------------------------
 #               IMPORTS
 # -----------------------------------------
-import time               # low-level time functions
+import time            # low-level time functions
 import datetime as date    # datetime module (imported as alias 'date')
 import calendar
 from datetime import datetime, timedelta, timezone, time as dtime, date as ddate
-from zoneinfo import ZoneInfo  # Python 3.9+ for timezone support
-
 
 # -----------------------------------------
 #           TIME MODULE BASICS
@@ -184,7 +182,7 @@ parsed_dt = datetime.strptime("2025-10-16 11:30:00", "%Y-%m-%d %H:%M:%S")
 print("Parsed datetime:", parsed_dt)
 
 # From timestamp
-ts = time.time()
+ts = Time.time()
 dt_from_ts = datetime.fromtimestamp(ts)
 dt_from_ts_utc = datetime.fromtimestamp(ts, tz=timezone.utc)
 print("From timestamp (local):", dt_from_ts)

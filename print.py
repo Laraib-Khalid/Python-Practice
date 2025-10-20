@@ -46,7 +46,8 @@ print("Loading... 100%\rComplete!")
 # Output on console: "Complete!" (the word 'Complete!' overwrites part of 'Loading... 100%')
 
 # Another carriage return example — dynamic line updates (used in progress bars)
-import time
+from Time import time
+
 for i in range(5):
     print(f"Processing {i+1}/5\r", end='')   # '\r' keeps overwriting the same line
     time.sleep(0.5)
