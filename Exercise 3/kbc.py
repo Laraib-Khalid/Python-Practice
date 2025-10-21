@@ -62,7 +62,7 @@ total_money = 0
 
 # Function to display the question and options
 def display_question(question,index):
-    print(f"Question {index + 1}: {question["question"]}")
+    print(f"Question {index}: {question["question"]}")
     for option, value in question["options"].items():
         print(f"{option}: {value}")
 
@@ -73,7 +73,7 @@ def check_answer(user_answer, correct_answer):
 # Main game loop
 # for question in data:
 #     display_question(question)
-for i, question in enumerate(data):
+for i, question in enumerate(data, start=1):
     display_question(question, i)
     user_answer = input("Enter your answer (A, B, C, or D): ")
     if check_answer(user_answer, question["answer"]):
