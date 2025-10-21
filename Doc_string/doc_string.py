@@ -12,7 +12,7 @@ def add_numbers(a, b):
     return a + b
 
 a = 5
-b = 5
+b = 6
 # Accessing the docstring
 print(add_numbers.__doc__)
 print(f"Add Number {a} and {b} = {add_numbers(a, b)}")
