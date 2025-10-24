@@ -1,0 +1,24 @@
+# 🟢 Step 1: Create a virtual environment
+python -m venv myenv
+
+
+# Step 2: Activate virtual environment
+venv\Scripts\activate.bat   # On Windows
+
+
+# Step 3: Install dependencies
+pip install requests
+pip install beautifulsoup4
+pip install pandas
+
+
+# Step 4: Freeze dependencies (for sharing)
+pip freeze > requirements.txt
+
+
+# Step 5: Install dependencies
+pip install -r requirements.txt
+
+
+# Step 6: Deactivate virtual environment
+deactivate
