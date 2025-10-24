@@ -18,7 +18,16 @@ except ZeroDivisionError:
     print("Error: Division by zero is not allowed.")
 
 
-# Example 3: Using else (runs if no exception) and finally (always runs)
+# Example 3: Handling IndexError safely
+numbers = [10, 20, 30]
+
+try:
+    print(numbers[5])  # Trying to access invalid index
+except IndexError:
+    print("Error: You're trying to access an index that doesn't exist in the list!")
+
+
+# Example 4: Using else (runs if no exception) and finally (always runs)
 try:
     num = int(input("Enter a positive number: "))
     print("Square is:", num ** 2)
@@ -30,14 +39,14 @@ finally:
     print("Program ended (finally block always executes).")
 
 
-# Example 4: Generic exception handling
+# Example 5: Generic exception handling
 try:
     value = int("abc")  # This will raise ValueError
 except Exception as e:
     print("An error occurred:", e)  # Prints the actual error message
 
 
-# Example 5: Nested try-except blocks
+# Example 6: Nested try-except blocks
 try:
     num1 = int(input("Enter first number: "))
     num2 = int(input("Enter second number: "))
