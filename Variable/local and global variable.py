@@ -19,8 +19,8 @@ print("Global variable x =", x)          # works fine
 
 print("-" * 50)
 
-# 2nd Example
 
+# 2nd Example
 count = 0  # Global variable
 
 def increase_count():
