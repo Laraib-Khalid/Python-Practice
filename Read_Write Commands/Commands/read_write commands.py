@@ -105,3 +105,17 @@ lines = ['line 1', 'line 2', 'line 3']
 for line in lines:
     f.write(line + '\n')
 f.close()
+
+
+
+
+
+# ⚡ Summary Table
+#
+# | Method         | Description            | Returns | Example Use             |
+# | -------------- | ---------------------- | ------- | ----------------------- |
+# | `write()`      | Writes a single string | None    | `f.write("Hello")`      |
+# | `writelines()` | Writes list of strings | None    | `f.writelines(lines)`   |
+# | `read()`       | Reads entire file      | String  | `data = f.read()`       |
+# | `readline()`   | Reads next line        | String  | `line = f.readline()`   |
+# | `readlines()`  | Reads all lines        | List    | `lines = f.readlines()` |
