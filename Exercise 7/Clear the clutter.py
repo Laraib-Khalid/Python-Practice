@@ -27,7 +27,7 @@ def clear_clutter(folder_path):
         if ext == "":
             continue
 
-        # Remove leading dot (e.g., .png → png)
+        # # Remove leading dot (e.g., .png → png)
         ext = ext.lower()
 
         # Initialize counter for this extension
