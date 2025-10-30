@@ -55,3 +55,5 @@ print("Index 1:", obj1[1])  # __getitem__
 obj1()   # __call__  ✅ calling object like function
 
 del obj2  # __del__ called
+
+obj1()
