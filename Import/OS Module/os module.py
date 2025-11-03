@@ -51,7 +51,7 @@ else:
 # # ------------------------------------------
 # # 5️⃣ Create nested directories
 # # ------------------------------------------
-# nested_path = "main_folder/sub_folder"
+# nested_path = "main_folder/sub_folder/sub_folder_2"
 # os.makedirs(nested_path, exist_ok=True)  # exist_ok=True avoids error if exists
 # print("Nested directories created:", nested_path)
 
