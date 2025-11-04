@@ -8,8 +8,8 @@ print("-" * 50)
 
 
 names = ["John", "Jane", "Jim"]
-lower_names = [name.lower() for name in names]
-print(lower_names)
+# lower_names = [name.lower() for name in names]
+print(lower_names := list(map(str.lower,names)))
 
 if (name := (input("Enter a name: ")).lower()) in lower_names:
     print(f"Hello, {name}!")
