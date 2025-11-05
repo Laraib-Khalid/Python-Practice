@@ -1,3 +1,6 @@
+# Install library first
+# pip install win10toast
+
 from win10toast import ToastNotifier
 import time
 

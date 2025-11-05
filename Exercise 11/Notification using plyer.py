@@ -1,3 +1,6 @@
+# Install dependency
+# pip install plyer
+
 from plyer import notification
 import time
 
